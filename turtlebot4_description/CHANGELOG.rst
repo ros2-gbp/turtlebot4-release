@@ -2,6 +2,16 @@
 Changelog for package turtlebot4_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.0.0 (2023-02-17)
+------------------
+* Updates for new DepthAI node.
+* Added tf_static remapping to support namespacing
+* Updated oakd link names to match new oakd node
+* Added fix for wheeldrop frames not found by Rviz
+* Namespacing
+* Remap tf topics to not use global namespace
+* Contributors: Roni Kreinin
+
 0.1.2 (2022-09-15)
 ------------------
 

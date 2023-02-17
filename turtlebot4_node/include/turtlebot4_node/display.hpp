@@ -19,14 +19,15 @@
 #ifndef TURTLEBOT4_NODE__DISPLAY_HPP_
 #define TURTLEBOT4_NODE__DISPLAY_HPP_
 
+#include <memory>
+#include <string>
+#include <vector>
+
 #include <rclcpp/rclcpp.hpp>
 #include <sensor_msgs/msg/battery_state.hpp>
 #include <std_msgs/msg/string.hpp>
 #include <std_msgs/msg/int32.hpp>
 
-#include <memory>
-#include <string>
-#include <vector>
 
 #include "turtlebot4_node/utils.hpp"
 #include "turtlebot4_msgs/msg/user_display.hpp"
@@ -41,12 +42,29 @@ static constexpr auto DISPLAY_CHAR_PER_LINE_HEADER = 21;
 
 struct Turtlebot4MenuEntry
 {
-  std::string name_;
+  std::string name_, function_;
   turtlebot4_function_callback_t cb_;
+  turtlebot4_function_call_callback_t function_call_cb_;
 
   explicit Turtlebot4MenuEntry(std::string name)
-  : name_(name)
+  : name_(name),
+    function_(name)
   {}
+
+  /**
+   * @brief Call menu function
+   *
+   */
+  void function_call()
+  {
+    if (function_call_cb_ != nullptr) {
+      function_call_cb_(function_);
+    }
+
+    if (cb_ != nullptr) {
+      cb_();
+    }
+  }
 };
 
 class Display
@@ -76,6 +94,7 @@ public:
 private:
   // Update display
   void update();
+  void request_update();
   void update_header();
   void set_menu_entries();
   void pad_line(std::string & line);
@@ -87,6 +106,7 @@ private:
   std::shared_ptr<rclcpp::Node> nh_;
   rclcpp::Publisher<turtlebot4_msgs::msg::UserDisplay>::SharedPtr display_pub_;
   rclcpp::Subscription<std_msgs::msg::String>::SharedPtr display_message_sub_;
+  bool update_required_;
 
   // Menu
   std::vector<Turtlebot4MenuEntry> menu_entries_;
