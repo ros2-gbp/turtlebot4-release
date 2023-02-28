@@ -2,6 +2,11 @@
 Changelog for package turtlebot4_navigation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.0.1 (2023-02-28)
+------------------
+* Navigator fixes
+* Contributors: Roni Kreinin
+
 1.0.0 (2023-02-17)
 ------------------
 * Namespacing
