@@ -1,0 +1,57 @@
+ros-humble-turtlebot4-navigation (1.0.3-1jammy) jammy; urgency=high
+
+
+
+ -- rkreinin <rkreinin@clearpathrobotics.com>  Wed, 31 May 2023 04:00:00 -0000
+
+ros-humble-turtlebot4-navigation (1.0.2-1jammy) jammy; urgency=high
+
+  * Added namespacing support in sim
+  * Set warehouse map as default
+  * New map files for new and modified worlds
+  * Updating robot radius to max radius and increasing inflation
+  * Added missing Nav2 plugin
+  * Contributors: Hilary Luo, Roni Kreinin
+
+ -- rkreinin <rkreinin@clearpathrobotics.com>  Mon, 15 May 2023 04:00:00 -0000
+
+ros-humble-turtlebot4-navigation (1.0.1-1jammy) jammy; urgency=high
+
+  * Navigator fixes
+  * Contributors: Roni Kreinin
+
+ -- rkreinin <rkreinin@clearpathrobotics.com>  Tue, 28 Feb 2023 05:00:00 -0000
+
+ros-humble-turtlebot4-navigation (1.0.0-1jammy) jammy; urgency=high
+
+  * Namespacing
+  * Linter fixes
+  * Nav2, localization, and slam launch and config files
+  * Contributors: Roni Kreinin
+
+ -- rkreinin <rkreinin@clearpathrobotics.com>  Fri, 17 Feb 2023 05:00:00 -0000
+
+ros-humble-turtlebot4-navigation (0.1.2-1jammy) jammy; urgency=high
+
+  * ci: Fixed flake8 lint
+  * Contributors: Daisuke Nishimatsu, Roni Kreinin
+
+ -- rkreinin <rkreinin@clearpathrobotics.com>  Thu, 15 Sep 2022 04:00:00 -0000
+
+ros-humble-turtlebot4-navigation (0.1.1-1jammy) jammy; urgency=high
+
+  * Install turtlebot4_navigation module
+  * Added turtlebot4 navigator
+  * Fixed AMCL robot_model_type parameter
+  * Contributors: Roni Kreinin, roni-kreinin
+
+ -- rkreinin <rkreinin@clearpathrobotics.com>  Tue, 12 Jul 2022 04:00:00 -0000
+
+ros-humble-turtlebot4-navigation (0.1.0-1jammy) jammy; urgency=high
+
+  * First Galactic release
+  * Contributors: Roni Kreinin
+
+ -- rkreinin <rkreinin@clearpathrobotics.com>  Tue, 03 May 2022 04:00:00 -0000
+
+
