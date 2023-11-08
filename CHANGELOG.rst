@@ -2,6 +2,9 @@
 Changelog for package turtlebot4_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.0.4 (2023-11-08)
+------------------
+
 1.0.3 (2023-05-31)
 ------------------
 * Added joint_state_publisher dependency
