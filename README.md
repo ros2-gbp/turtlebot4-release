@@ -1,3 +1,30 @@
+## turtlebot4 (jazzy) - 2.0.0-1
+
+The packages in the `turtlebot4` repository were released into the `jazzy` distro by running `/usr/bin/bloom-release -t jazzy -r jazzy turtlebot4` on `Fri, 30 Aug 2024 15:31:10 -0000`
+
+These packages were released:
+- `turtlebot4_description`
+- `turtlebot4_msgs`
+- `turtlebot4_navigation`
+- `turtlebot4_node`
+
+Version of package(s) in repository `turtlebot4`:
+
+- upstream repository: https://github.com/turtlebot/turtlebot4.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `2.0.0-1`
+
+Versions of tools used:
+
+- bloom version: `0.12.0`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.25.1`
+- rosdistro version: `0.9.1`
+- vcstools version: `0.1.42`
+
+
 ## turtlebot4 (humble) - 1.0.5-1
 
 The packages in the `turtlebot4` repository were released into the `humble` distro by running `/usr/bin/bloom-release --rosdistro humble --track humble turtlebot4` on `Tue, 02 Jul 2024 15:38:30 -0000`
