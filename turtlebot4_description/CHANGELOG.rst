@@ -2,6 +2,9 @@
 Changelog for package turtlebot4_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.0.1 (2024-09-25)
+------------------
+
 2.0.0 (2024-08-29)
 ------------------
 * Add base_footprint link to URDF
