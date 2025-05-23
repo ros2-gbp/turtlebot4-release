@@ -2,6 +2,12 @@
 Changelog for package turtlebot4_node
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.1.0 (2025-05-23)
+------------------
+* Fix tag order
+* Update package maintainers
+* Contributors: Chris Iverach-Brereton
+
 2.0.1 (2024-09-25)
 ------------------
 * Block the wall-follow callbacks from running if the robot is presently docked
